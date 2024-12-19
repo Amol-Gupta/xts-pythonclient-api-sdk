@@ -48,7 +48,7 @@ class MDSocket_io(socketio.Client):
         self.sid.on('connect', self.on_connect)
         self.sid.on('message', self.on_message)
 
-         """Similarly implement partial json full and binary json full."""
+        """Similarly implement partial json full and binary json full."""
         self.sid.on('1501-json-full', self.on_message1501_json_full)
         self.sid.on('1501-json-partial', self.on_message1501_json_partial)
 
