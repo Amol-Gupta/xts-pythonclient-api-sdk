@@ -134,11 +134,11 @@ class MDSocket_io(socketio.Client):
         """On receiving message code 1502 full"""
         print('I received a 1502 Market depth message!' + data)
 
-   def on_message1507_json_full(self, data):
+    def on_message1507_json_full(self, data):
         """On receiving message code 1507 full"""
         print('I received a 1507 MarketStatus message!' + data)
         
-   def on_message1512_json_full(self, data):
+    def on_message1512_json_full(self, data):
         """On receiving message code 1512 full"""
         print('I received a 1512 LTP message!' + data)     
 
