@@ -154,6 +154,10 @@ class MDSocket_io(socketio.Client):
         """On receiving message code 1501 full"""
         print('I received a 1501 Level1,Touchline message!' + data)
 
+    def on_message1105_json_full(self, data):
+        """On receiving message code 1105 full"""
+        print('I received a 1105 Instrument Property Change Event!' + data)
+        
     def on_message1502_json_partial(self, data):
         """On receiving message code 1502 partial"""
         print('I received a 1502 partial message!' + data)
