@@ -1,11 +1,13 @@
 from datetime import datetime
-
+import os
 from Connect import XTSConnect
 from MarketDataSocketClient import MDSocket_io
+import dotenv
 
+dotenv.load_dotenv(dotenv.find_dotenv())
 # MarketData API Credentials
-API_KEY = "a27e231381266f63c62157"
-API_SECRET = "Akko754#C3"
+API_KEY = os.getenv("MARKETDATA_API_KEY")
+API_SECRET = os.getenv("MARKETDATA_API_SECRET")
 source = "WEBAPI"
 
 # Initialise

@@ -9,6 +9,7 @@ dependencies = [
     "certifi==2020.12.5",
     "chardet==4.0.0",
     "idna==2.10",
+    "python-dotenv>=1.0.1",
     "python-engineio==3.13.0",
     "python-socketio==4.6.0",
     "requests==2.25.1",
